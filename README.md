@@ -96,3 +96,16 @@ require("lazy").setup("plugins") -- Load from plugins folder
 -- Load Requirements from vim-options file
 require("vim-options")
 ```
+
+
+
+## My Neovim Configuration
+
+This repository contains my personal Neovim configuration, tailored to my workflow and preferences. You can change and add to it as you wish.
+
+### License
+
+This Neovim configuration is licensed under the [MIT License](LICENSE).
+
+Please see the [LICENSE](LICENSE) file for details. By using this configuration, you agree to the terms and conditions outlined in the license.
+
