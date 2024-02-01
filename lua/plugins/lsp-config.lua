@@ -1,3 +1,4 @@
+-- MASON languages
 return {
   {
     "williamboman/mason.nvim",
@@ -14,12 +15,11 @@ return {
           "cssls",
           "html",
           "htmx",
-          "marksman",
           "jsonls",
           "tsserver",
           "pyright",
           "rust_analyzer",
-          "templ"
+          "templ",
         }
       })
     end
@@ -33,7 +33,6 @@ return {
       lspconfig.cssls.setup({})
       lspconfig.html.setup({})
       lspconfig.htmx.setup({})
-      lspconfig.marksman.setup({})
       lspconfig.jsonls.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.pyright.setup({})

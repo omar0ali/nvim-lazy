@@ -1,3 +1,5 @@
+-- Leader key must be loaded before Lazy
+vim.g.mapleader = " " -- <leader> space bar
 -- Setup Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -15,5 +17,3 @@ require("lazy").setup("plugins") -- Load from plugins folder
 
 -- Load Requirements from vim-options file
 require("vim-options")
-
-

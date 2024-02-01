@@ -1,8 +1,8 @@
   --TREESITTER
  return {
-    "nvim-treesitter/nvim-treesitter", 
+    "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = function() 
+    config = function()
       --Treesitter settings
       local config = require("nvim-treesitter.configs")
       config.setup({
@@ -19,6 +19,7 @@
           "css",
           "html"
         },
+        auto_install = true,
         highlight = {
           enable = true,
           additional_vim_regex_highlighting = true,

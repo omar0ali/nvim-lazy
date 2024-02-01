@@ -3,7 +3,7 @@ return {
   {'nvim-telescope/telescope.nvim', tag = '0.1.5',
   dependencies = { 'nvim-lua/plenary.nvim' },
   },
-  {
+  { -- Used for a better design UI for action code.
     "nvim-telescope/telescope-ui-select.nvim",
     config = function()
       require("telescope").setup({
