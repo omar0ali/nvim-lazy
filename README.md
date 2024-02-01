@@ -1,9 +1,9 @@
 # nvim-lazy
 
 ### Plugins
->
+
 > **Note**
->You can go to plugins folder located in /lua/plugins/...
+>You can go to plugins folder located in ("/lua/plugins/...")
 
 - catppuccin
 - lsp-config
@@ -15,29 +15,29 @@
 - which-key
 
 ### Mason & Lsp
->
->**Note**
->Can be viewed :Mason
 
-- css-lsp (cssls)
-- gopld
-- html-lsp (html)
-- htmx-lsp (htmx)
-- json-lsp (jsonls)
-- lua-language-server (lua_ls)
-- markdownlint
-- pyright
-- rust-analyzer
-- semgrep
-- templ
-- typescript-language-server (tsserver)
+>**Note**
+> Command configuration (":Mason")
+
+- Language Servers:
+  - css-lsp (cssls)
+  - gopld
+  - html-lsp (html)
+  - htmx-lsp (htmx)
+  - json-lsp (jsonls)
+  - lua-language-server (lua_ls)
+  - markdownlint
+  - pyright
+  - rust-analyzer
+  - semgrep
+  - templ
+  - typescript-language-server (tsserver)
 
 ### Vim keymap settings
->**Note**
->File located in lua/vim-options.lua
 
+> **Note**
+> Reference to a file (vim-options.lua) containing Vim keymap settings.
 
-Setting up vim and keymapping
 ```lua
 -- Setup vim settings
 vim.cmd("set expandtab")
@@ -72,8 +72,8 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Co
 vim.keymap.set("n", "<leader>p", vim.lsp.buf.format, { desc = "Format document" })
 ```
 
-
 ### init.lua
+
 ```lua
 -- Leader key must be loaded before Lazy
 vim.g.mapleader = " " -- <leader> space bar
