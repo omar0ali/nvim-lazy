@@ -106,6 +106,3 @@ This repository contains my personal Neovim configuration, tailored to my workfl
 ### License
 
 This Neovim configuration is licensed under the [MIT License](LICENSE).
-
-Please see the [LICENSE](LICENSE) file for details. By using this configuration, you agree to the terms and conditions outlined in the license.
-
