@@ -2,7 +2,7 @@
 
 ### Plugins
 
-> **Note**
+> ![NOTE]
 >You can go to plugins folder located in ("/lua/plugins/...")
 
 - catppuccin
@@ -16,7 +16,7 @@
 
 ### Mason & Lsp
 
->**Note**
+> ![NOTE]
 > Command configuration (":Mason")
 
 - Language Servers:
@@ -35,8 +35,8 @@
 
 ### Vim keymap settings
 
-> **Note**
-> Reference to a file (vim-options.lua) containing Vim keymap settings.
+> ![NOTE]
+> File (vim-options.lua) containing Vim keymap settings.
 
 ```lua
 -- Setup vim settings
