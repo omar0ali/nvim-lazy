@@ -7,7 +7,7 @@
 
 - catppuccin
 - lsp-config
-- Harpoon
+- [Harpoon](https://github.com/ThePrimeagen/harpoon)
 - lualine
 - none-ls or null-ls
 - telescope
@@ -106,7 +106,7 @@ require("vim-options")
 I would like to thank the creators of the following video tutorials, as they played a crucial role in guiding me through the setup process and making it a smooth experience:
 
 1. [Typecraft: Lazy Vim Setup](https://www.youtube.com/watch?v=zHTeCSVAFNY)
-    - The [neovim-for-newbs](https://github.com/cpow/neovim-for-newbs) GitHub repository was helpful in implementing the configurations. Sharing these resources for those interested in a similar setup!"
+    - The [neovim-for-newbs](https://github.com/cpow/neovim-for-newbs) GitHub repository was helpful in implementing the configurations. Sharing these resources for those interested in a similar setup!
    
 2. [ThePrimeagen: Packer Setup](https://www.youtube.com/watch?v=w7i4amO_zaE)
     - Using Packer plugin manager.
