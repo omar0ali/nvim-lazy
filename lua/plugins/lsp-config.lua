@@ -1,43 +1,51 @@
 -- MASON languages
 return {
-  {
-    "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup()
-    end
-  },{
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfig").setup({
-        ensure_installed = {
-          "lua_ls",
-          "gopls",
-          "cssls",
-          "html",
-          "htmx",
-          "jsonls",
-          "tsserver",
-          "pyright",
-          "rust_analyzer",
-          "templ",
-        }
-      })
-    end
-  },{
-    "neovim/nvim-lspconfig",
-    config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({})
-      -- You can add more languages here
-      lspconfig.gopls.setup({})
-      lspconfig.cssls.setup({})
-      lspconfig.html.setup({})
-      lspconfig.htmx.setup({})
-      lspconfig.jsonls.setup({})
-      lspconfig.tsserver.setup({})
-      lspconfig.pyright.setup({})
-      lspconfig.rust_analyzer.setup({})
-      lspconfig.templ.setup({})
-    end
-  }
+	{
+		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup()
+		end,
+	},
+	{
+		"williamboman/mason-lspconfig.nvim",
+		opts = {
+			auto_install = true,
+		},
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = {
+					"lua_ls",
+					"gopls",
+					"cssls",
+					"html",
+					"htmx",
+					"jsonls",
+					"tsserver",
+					"pyright",
+					"rust_analyzer",
+					"templ",
+				},
+			})
+		end,
+	},
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local lspconfig = require("lspconfig")
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+			})
+			-- You can add more languages here
+			lspconfig.gopls.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.htmx.setup({ capabilities = capabilities })
+			lspconfig.jsonls.setup({ capabilities = capabilities })
+			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.pyright.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+			lspconfig.templ.setup({ capabilities = capabilities })
+		end,
+	},
 }

@@ -2,9 +2,8 @@
 
 ### Plugins
 
-
 > [!NOTE]
->You can go to plugins folder located in ("/lua/plugins/...")
+> You can go to plugins folder located in ("/lua/plugins/...")
 
 - catppuccin
 - lsp-config
@@ -14,6 +13,9 @@
 - tmux-vim-navigator
 - treesitter
 - which-key
+- debugging
+- completion
+- alpha (Start Screen)
 
 ### Mason & Lsp
 
@@ -30,10 +32,10 @@
   - markdownlint
   - pyright
   - rust-analyzer
-  - semgrep
+  - prettier
   - templ
   - typescript-language-server (tsserver)
-
+    ...
 ### Vim keymap settings
 
 > [!NOTE]
@@ -49,7 +51,7 @@ vim.cmd("set relativenumber")
 vim.cmd("set scrolloff=10")
 
 
--- Explore --
+-- Explore to view files and folders --
 vim.keymap.set("n", "<leader>ee", ":Explore<CR>", { noremap = true, silent = true, desc = "Explore" })
 -- Moving text up down left right --
 vim.keymap.set("x", "<", "<gv", { noremap = true, silent = true })
@@ -97,6 +99,12 @@ require("lazy").setup("plugins") -- Load from plugins folder
 require("vim-options")
 ```
 
+### Video Tutorial
+
+>[typecraft using lazy vim](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+
+>[ThePrimeagen using packer](https://www.youtube.com/watch?v=w7i4amO_zaE)\
+[ThePrimeagen using lazy.vim](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
 
 
 ## My Neovim Configuration
