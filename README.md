@@ -102,15 +102,14 @@ require("vim-options")
 ### Video Tutorial
 
 >[typecraft using lazy vim](https://www.youtube.com/watch?v=zHTeCSVAFNY)
-
 >[ThePrimeagen using packer](https://www.youtube.com/watch?v=w7i4amO_zaE)\
 [ThePrimeagen using lazy.vim](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
 
+I want to express my gratitude to the creators of these videos. They were instrumental in guiding me through the process and making it a smooth experience.
 
 ## My Neovim Configuration
 
 This repository contains my personal Neovim configuration, tailored to my workflow and preferences. You can change and add to it as you wish.
-
 ### License
 
 This Neovim configuration is licensed under the [MIT License](LICENSE).
