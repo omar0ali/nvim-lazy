@@ -102,16 +102,20 @@ require("vim-options")
 
 ### Video Tutorial
 
-> [typecraft using lazy vim](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+I would like to thank the creators of the following video tutorials, as they played a crucial role in guiding me through the setup process and making it a smooth experience:
 
-> [ThePrimeagen using packer](https://www.youtube.com/watch?v=w7i4amO_zaE)\
-> [ThePrimeagen using lazy.vim](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
+1. [Typecraft: Lazy Vim Setup](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+   
+2. [ThePrimeagen: Packer Setup](https://www.youtube.com/watch?v=w7i4amO_zaE)
+   
+3. [ThePrimeagen: Lazy.vim Setup](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
 
-I want to express my gratitude to the creators of these videos. They were instrumental in guiding me through the process and making it a smooth experience.
+These tutorials provided invaluable insights into configuring my development environment using lazy.vim. I highly recommend checking them out for anyone interested in optimizing their neovim setup.
+
 
 ## My Neovim Configuration
 
-This repository contains my personal Neovim configuration, tailored to my workflow and preferences. You can change and add to it as you wish.
+This repository contains my personal Neovim configuration. Feel free to make changes and additions as you see fit.
 
 ### License
 
