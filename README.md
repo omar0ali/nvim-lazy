@@ -7,6 +7,7 @@
 
 - catppuccin
 - lsp-config
+- Harpoon
 - lualine
 - none-ls or null-ls
 - telescope
@@ -105,12 +106,16 @@ require("vim-options")
 I would like to thank the creators of the following video tutorials, as they played a crucial role in guiding me through the setup process and making it a smooth experience:
 
 1. [Typecraft: Lazy Vim Setup](https://www.youtube.com/watch?v=zHTeCSVAFNY)
+    - The [neovim-for-newbs](https://github.com/cpow/neovim-for-newbs) GitHub repository was helpful in implementing the configurations. Sharing these resources for those interested in a similar setup!"
    
 2. [ThePrimeagen: Packer Setup](https://www.youtube.com/watch?v=w7i4amO_zaE)
+    - Using Packer plugin manager.
    
 3. [ThePrimeagen: Lazy.vim Setup](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
+    - https://github.com/ThePrimeagen
+    - Using lazy.vim plugin manager.
 
-These tutorials provided invaluable insights into configuring my development environment using lazy.vim. I highly recommend checking them out for anyone interested in optimizing their neovim setup.
+These tutorials provided invaluable insights into configuring my development environment using lazy.vim. I highly recommend checking them out for anyone interested in optimizing their neovim setup and delving into more advanced concepts.
 
 
 ## My Neovim Configuration
