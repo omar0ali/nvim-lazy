@@ -42,7 +42,7 @@ return {
             lspconfig.html.setup({ capabilities = capabilities })
             lspconfig.jsonls.setup({ capabilities = capabilities })
             lspconfig.tsserver.setup({ capabilities = capabilities })
-            lspconfig.clangd.setup({capabilities = capabilities})
+            lspconfig.clangd.setup({ capabilities = capabilities })
             lspconfig.pyright.setup({ capabilities = capabilities })
             lspconfig.rust_analyzer.setup({ capabilities = capabilities })
             lspconfig.templ.setup({ capabilities = capabilities })

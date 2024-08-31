@@ -34,7 +34,10 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })
 
 -- Telescope
-vim.keymap.set("n", "<leader>t", ":Telescope<CR>", {desc = "Telescope"})
+vim.keymap.set("n", "<leader>t", ":echo<CR>", {desc = "Tools (Mason, Lazy, Telescope)"})
+vim.keymap.set("n", "<leader>tt", ":Telescope<CR>", {desc = "Telescope"})
+vim.keymap.set("n", "<leader>tl", ":Lazy<CR>", {desc = "Lazy"})
+vim.keymap.set("n", "<leader>tm", ":Mason<CR>", {desc = "Mason"})
 
 -- LSP Keymaps
 vim.keymap.set("n", "<leader>.", vim.lsp.buf.hover, { desc = "Function Info" })
