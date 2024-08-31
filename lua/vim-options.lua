@@ -1,12 +1,23 @@
 -- Setup vim settings
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set relativenumber")
-vim.cmd("set scrolloff=10")
-vim.g.mapleader = " " -- <leader> space bar -- Already loaded in the init.lua
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.expandtab = true
+vim.opt.wrap = false
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 999
+vim.opt.clipboard = "unnamedplus" -- Copy to clipboard enabled
+-- vim.opt.inccommand = "split"
+vim.opt.ignorecase = true
+vim.opt.virtualedit = "block"
+-- vim.opt.termguicolors = true
+
+
+-- <leader> space bar -- Already loaded in the init.lua
+vim.g.mapleader = " "
 -- Explore --
+vim.keymap.set("n", "<leader>e", ":echo", { desc = "Explore Settings" })
 vim.keymap.set("n", "<leader>ee", ":Explore<CR>", { noremap = true, silent = true, desc = "Explore" })
 -- Moving text up down left right --
 vim.keymap.set("x", "<", "<gv", { noremap = true, silent = true })

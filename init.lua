@@ -13,7 +13,10 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup("plugins") -- Load from plugins folder
-
+require("lazy").setup("plugins") -- Load from plugins folder (Or provide a folder that has files) All of the files starts with return {...}
+-- Another way of using require("lazy"):
+---- require("lazy").setup({
+----    "git url"
+---- })
 -- Load Requirements from vim-options file
-require("vim-options")
+require("vim-options") -- Load the file and setup.
