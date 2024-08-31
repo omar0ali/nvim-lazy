@@ -33,6 +33,9 @@ vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })
 
+-- Telescope
+vim.keymap.set("n", "<leader>t", ":Telescope<CR>", {desc = "Telescope"})
+
 -- LSP Keymaps
 vim.keymap.set("n", "<leader>.", vim.lsp.buf.hover, { desc = "Function Info" })
 vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, { desc = "Go to definition" })

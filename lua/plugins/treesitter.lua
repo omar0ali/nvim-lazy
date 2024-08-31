@@ -20,6 +20,7 @@ return {
                 "go",
                 "rust",
                 "c",
+                "c++",
                 "css",
                 "html",
                 "bash",
@@ -36,10 +37,10 @@ return {
             incremental_selection = {
                 enable = true,
                 keymaps = { -- if you want to highlight quickly with using these keymaps
-                    init_selection = "<Leader>ss",
-                    node_incremental = "<Leader>si",
-                    scope_incremental = "<Leader>sc",
-                    node_decremental = "<Leader>sd",
+                    init_selection = "<leader>ss",
+                    node_incremental = "<leader>si",
+                    scope_incremental = "<leader>sc",
+                    node_decremental = "<leader>sd",
                 },
             },
             textobjects = {
