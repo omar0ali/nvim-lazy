@@ -9,25 +9,21 @@
 - lsp-config
 - [Harpoon](https://github.com/ThePrimeagen/harpoon)
 - lualine
-- none-ls or null-ls
 - telescope
 - tmux-vim-navigator
 - treesitter
-- which-key
-- debugging
 - completion
 - alpha (Start Screen)
 
 ### Mason & Lsp
 
 > [!NOTE]
-> Command configuration (":Mason")
+> Command configuration (":Mason") or <leader>tm
 
-- Language Servers:
+- Language Servers: LSP from lsp_config
   - css-lsp (cssls)
   - gopld
   - html-lsp (html)
-  - htmx-lsp (htmx)
   - json-lsp (jsonls)
   - lua-language-server (lua_ls)
   - markdownlint
@@ -45,12 +41,20 @@
 
 ```lua
 -- Setup vim settings
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set relativenumber")
-vim.cmd("set scrolloff=10")
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.expandtab = true
+vim.opt.wrap = false
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 999
+vim.opt.clipboard = "unnamedplus" -- Copy to clipboard enabled
+-- vim.opt.inccommand = "split"
+vim.opt.ignorecase = true
+vim.opt.virtualedit = "block"
+-- vim.opt.termguicolors = true
+
 
 
 -- Explore to view files and folders --
@@ -100,23 +104,6 @@ require("lazy").setup("plugins") -- Load from plugins folder
 -- Load Requirements from vim-options file
 require("vim-options")
 ```
-
-### Video Tutorial
-
-I would like to thank the creators of the following video tutorials, as they played a crucial role in guiding me through the setup process and making it a smooth experience:
-
-1. [Typecraft: Lazy Vim Setup](https://www.youtube.com/watch?v=zHTeCSVAFNY)
-    - The [neovim-for-newbs](https://github.com/cpow/neovim-for-newbs) GitHub repository was helpful in implementing the configurations. Sharing these resources for those interested in a similar setup!
-   
-2. [ThePrimeagen: Packer Setup](https://www.youtube.com/watch?v=w7i4amO_zaE)
-    - Using Packer plugin manager.
-   
-3. [ThePrimeagen: Lazy.vim Setup](https://www.youtube.com/watch?v=ZWWxwwUsPNw)
-    - https://github.com/ThePrimeagen
-    - Using lazy.vim plugin manager.
-
-These tutorials provided invaluable insights into configuring my development environment using lazy.vim. I highly recommend checking them out for anyone interested in optimizing their neovim setup and delving into more advanced concepts.
-
 
 ## My Neovim Configuration
 
