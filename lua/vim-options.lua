@@ -38,6 +38,7 @@ vim.keymap.set("n", "<leader>t", ":echo<CR>", {desc = "Tools (Mason, Lazy, Teles
 vim.keymap.set("n", "<leader>tt", ":Telescope<CR>", {desc = "Telescope"})
 vim.keymap.set("n", "<leader>tl", ":Lazy<CR>", {desc = "Lazy"})
 vim.keymap.set("n", "<leader>tm", ":Mason<CR>", {desc = "Mason"})
+vim.keymap.set("n", "<leader>ti", ":LspInfo<CR>", {desc = "LSP Info"})
 
 -- LSP Keymaps
 vim.keymap.set("n", "<leader>.", vim.lsp.buf.hover, { desc = "Function Info" })
